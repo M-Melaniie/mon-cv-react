@@ -1,0 +1,146 @@
+/* === SECTION SERVICES === */
+.services {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* === TITRE PRINCIPAL === */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+/* === SOUS-TITRE === */
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* === LIGNE BLEUE SOUS LE TITRE === */
+.underline {
+    width: 250px;  
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 10px auto 40px;
+}
+
+/* === GRID DES SERVICES === */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* === CARTES SERVICES === */
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 320px;
+    text-align: center;
+}
+
+/* === EFFET AU SURVOL === */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+.service-card a {
+    color: #0d6efd !important; 
+    text-decoration: none;
+    opacity: 1 !important; 
+    transition: color 0.3s ease-in-out;
+}
+
+.service-card a:hover {
+    color: #298eff!important;
+    text-decoration: underline;
+    opacity: 1 !important; 
+}
+/* === ICÔNES === */
+.service-icon {
+    font-size: 50px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* === CHANGEMENT DE COULEUR AU SURVOL === */
+.service-card:hover .service-icon {
+    color: #cde1f8;
+}
+
+/* === TITRES DES SERVICES === */
+h3 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+/* === LIENS DANS LES TEXTES === */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === RESPONSIVE TABLETTE === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-grid {
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 300px; 
+        flex: 1; 
+    }
+
+    .underline {
+        width: 180px; 
+    }
+}
+
+/* === RESPONSIVE MOBILE === */
+@media (max-width: 576px) {
+    .services {
+        padding: 40px 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .service-icon {
+        font-size: 40px;
+    }
+
+    .underline {
+        width: 150px;
+    }
+}

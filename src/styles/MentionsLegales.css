@@ -1,0 +1,118 @@
+/* === SECTION MENTIONS LÉGALES === */
+.mentions-legales {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.mentions-legales .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* === TITRE === */
+.mentions-legales h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.mentions-legales .underline {
+    width: 150px;
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 10px auto 30px;
+}
+
+/* === CONTENEUR ACCORDÉON === */
+.accordion-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === ACCORDÉON === */
+.accordion-item {
+    border: 1px solid #ccc;  
+    background: white !important;
+}
+
+.accordion-button {
+    background-color: white !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e1e1e;
+    border-bottom: 1px solid #ccc;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Lorsqu'un élément est ouvert */
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff !important; 
+    color: #0d6efd !important; 
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #0d6efd !important;
+}
+
+/* === ACCORDÉON BODY === */
+.accordion-body {
+    text-align: left;
+    padding: 20px;
+}
+/* === INFOS SECTION === */
+.info-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.info-section a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+/* === ICONES === */
+.info-section i {
+    color: #1e1e1e;
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .mentions-legales .container {
+        padding: 30px;
+    }
+
+    .mentions-legales h1 {
+        font-size: 2rem;
+    }
+
+    .info-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .info-section p {
+        font-size: 0.95rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,152 @@
+/* === SECTION PORTFOLIO === */
+.blog {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+  }
+  
+  .blog h1 {
+    color: #1e1e1e;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .blog p {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .underline {
+    width: 250px;  
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 10px auto 40px;
+  }
+  
+  /* === GRID DES CARTES === */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center; 
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+  
+  /* === STYLE DES CARTES === */
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* === IMAGE DES CARTES === */
+  .blog-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* === CONTENU DES CARTES === */
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* === TITRE ET TEXTE === */
+  .blog-item h3 {
+    color: #1e1e1e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px 0 10px;
+  }
+  
+  .blog-item p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+ /* === STYLE DU BOUTON "LIRE LA SUITE" === */
+ .blog .btn-primary {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    border: 2px solid #0d6efd;
+    margin-left: 0;
+    margin-top: 10px;
+    width: fit-content;
+}
+  .blog .btn-primary:hover {
+    background-color: #298eff;
+    color: white;
+  }
+  
+  /* === FOND GRIS DES TECHNOS === */
+  .publication-date {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 500;
+    background-color: #f8f9fa;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 50px;
+    margin-bottom: 0 !important;
+    flex-shrink: 0;
+  }
+  
+/* === RESPONSIVE TABLETTE (2 colonnes) === */
+@media (max-width: 992px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+        justify-content: center;
+    }
+}
+
+/* === MOBILE : 1 COLONNE CENTRÉE === */
+@media (max-width: 576px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px; 
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .blog-item {
+        width: 100%;
+        max-width: 100%;
+    }
+}
