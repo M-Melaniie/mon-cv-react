@@ -4,10 +4,9 @@ import "../styles/Footer.css";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
-  const location = useLocation(); // Récupérer l'URL actuelle
+  const location = useLocation();
   const [showButton, setShowButton] = useState(false);
 
-  // Afficher/Masquer le bouton "Retour vers le haut"
   useEffect(() => {
     const handleScroll = () => {
       setShowButton(window.scrollY > 200);
@@ -17,16 +16,13 @@ function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Fonction pour gérer le scroll ou la redirection
   const handleScroll = (sectionId) => {
     if (location.pathname === "/") {
-      // On est sur Home, donc on scrolle directement
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Si on est sur une autre page, on redirige vers Home avec l'ancre
       window.location.href = `/#${sectionId}`;
     }
   };
@@ -34,7 +30,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
+
         {/* Colonne 1 : Infos Contact */}
         <div className="footer-column">
           <h4>John Doe</h4>
@@ -70,9 +66,9 @@ function Footer() {
         <div className="footer-column">
           <h4>Mes dernières réalisations</h4>
           <ul>
-            <li><a href="#">Fresh food</a></li>
-            <li><a href="#">Restaurant Akira</a></li>
-            <li><a href="#">Espace bien-être</a></li>
+            <li><Link to="/realisations#fresh-food">Fresh food</Link></li>
+            <li><Link to="/realisations#restaurant-akira">Restaurant Akira</Link></li>
+            <li><Link to="/realisations#espace-bien-etre">Espace bien-être</Link></li>
           </ul>
         </div>
 
@@ -80,9 +76,9 @@ function Footer() {
         <div className="footer-column">
           <h4>Mes derniers articles</h4>
           <ul>
-            <li><a href="#">Coder son site en HTML/CSS</a></li>
-            <li><a href="#">Vendre ses produits sur le web</a></li>
-            <li><a href="#">Se positionner sur Google</a></li>
+            <li><Link to="/blog#coder-html-css">Coder son site en HTML/CSS</Link></li>
+            <li><Link to="/blog#vendre-produits-web">Vendre ses produits sur le web</Link></li>
+            <li><Link to="/blog#seo-google">Se positionner sur Google</Link></li>
           </ul>
         </div>
       </div>
@@ -91,7 +87,9 @@ function Footer() {
       <div className="footer-bottom">
         <p>© Designed by John Doe</p>
         {showButton && (
-          <a href="#" className="back-to-top">Retour vers le haut ↑</a>
+          <button className="back-to-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            Retour vers le haut ↑
+          </button>
         )}
       </div>
     </footer>

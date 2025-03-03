@@ -1,0 +1,44 @@
+.github-profile {
+    text-align: center;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .github-profile img {
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 3px solid #ddd;
+  }
+  
+  .github-profile h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .github-profile h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .github-profile p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .github-profile a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .github-profile a:hover {
+    background: #0046ad;
+  }

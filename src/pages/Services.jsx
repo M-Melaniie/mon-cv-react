@@ -29,7 +29,11 @@ function Services() {
             <FaFileCode className="service-icon" />
             <h3>DÉVELOPPEMENT WEB</h3>
             <p>
-              Le <strong>développement de sites web</strong> repose sur l’utilisation des langages <a href="#">HTML</a>, <a href="#">CSS</a>, <a href="#">JavaScript</a> et <a href="#">PHP</a>.
+              Le <strong>développement de sites web</strong> repose sur l’utilisation des langages 
+              <button className="link-button" onClick={(e) => e.preventDefault()}>HTML</button>, 
+              <button className="link-button" onClick={(e) => e.preventDefault()}>CSS</button>, 
+              <button className="link-button" onClick={(e) => e.preventDefault()}>JavaScript</button> et 
+              <button className="link-button" onClick={(e) => e.preventDefault()}>PHP</button>.
             </p>
           </div>
 
@@ -38,7 +42,10 @@ function Services() {
             <FaSearchDollar className="service-icon" />
             <h3>RÉFÉRENCEMENT</h3>
             <p>
-              Le <strong>référencement naturel</strong> d’un site, aussi appelé <a href="#">SEO</a>, consiste à mettre en œuvre des techniques pour <em>améliorer sa position</em> dans les résultats des moteurs de recherche.
+              Le <strong>référencement naturel</strong> d’un site, aussi appelé 
+              <button className="link-button" onClick={(e) => e.preventDefault()}>SEO</button>, 
+              consiste à mettre en œuvre des techniques pour <em>améliorer sa position</em> 
+              dans les résultats des moteurs de recherche.
             </p>
           </div>
         </div>
