@@ -8,3 +8,8 @@ Il permet de présenter le parcours et les compétences de John Doe.
 1. **Cloner le projet** :
    ```bash
    git clone https://github.com/M-Melaniie/mon-cv-react.git
+
+   ## Lien vers le site
+
+Vous pouvez consulter le site en ligne à l'adresse suivante :  
+[Mon CV en ligne - React.js](https://mon-cv-react-gy9g4j7jr-melanie-marcaggis-projects.vercel.app/)
