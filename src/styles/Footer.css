@@ -59,7 +59,7 @@ html, body {
 .footer-column ul li::before {
     content: ">";  
     color: #298eff; 
-    font-size: 1,2rem; 
+    font-size: 1.2rem; 
     font-weight: bold;
     margin-right: 8px; 
     vertical-align: middle; 
